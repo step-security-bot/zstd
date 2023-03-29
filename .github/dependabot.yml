@@ -4,3 +4,14 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+
+
+  - package-ecosystem: docker
+    directory: /.circleci/images/primary
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /contrib/docker
+    schedule:
+      interval: daily
